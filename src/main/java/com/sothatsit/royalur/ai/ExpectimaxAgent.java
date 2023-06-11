@@ -4,7 +4,6 @@ import com.sothatsit.royalur.ai.utility.UtilityFunction;
 import com.sothatsit.royalur.simulation.*;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 /**

@@ -24,8 +24,8 @@ public class BenchmarkTarget extends Target {
     public TargetResult run() {
         AgentStats[] results = runGames(
                 "Testing two of our slower agents against one another",
-                new AgentType[] { AgentType.PANDA_DEPTH_5, AgentType.EXPECTIMAX_DEPTH_5 },
-                1000
+                new AgentType[] { AgentType.RANDOM, AgentType.EXPECTO_ML_AGENT_DEPTH_8 },
+                20
         );
 
         return new TargetResult(this) {

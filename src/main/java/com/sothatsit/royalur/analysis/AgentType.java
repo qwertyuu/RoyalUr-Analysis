@@ -59,6 +59,13 @@ public final class AgentType {
             "Browser Panda Depth 7", new PandaAgent(new PrioritiseCenterUtilityFn(4.0f), 7, 2)
     );
 
+    public static final AgentType NEATO = createBasic(
+            "NEATO", new NeatoAgent()
+    );
+    public static final AgentType EXPECTO_ML_AGENT_DEPTH_8 = createBasic(
+            "EXPECTIMAX ML DEPTH 8", new ExpectoAgent("http://127.0.0.1:5000")
+    );
+
     // Alban Reinforcement Learning agents.
     public static final AgentType ALBAN_DEPTH_3 = createBasic(
             "Alban Depth 3", new ExpectimaxAgent(new AlbanReinforcementUtilityFn(), 3)

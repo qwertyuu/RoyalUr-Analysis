@@ -89,6 +89,8 @@ public class GameSimulator {
                     darkStats.markWin(false);
                     lightStats.markLoss(true);
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             } finally {
                 latch.countDown();
             }
